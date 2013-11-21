@@ -42,7 +42,6 @@ char *currFname;
 extern int lineno, column;
 extern char *filename ;
 extern char *fullSrcFileName ;
-int   yylineno = 1               ;
 void count()                     ;
 int process_pragma(char *);
 #undef yywrap
