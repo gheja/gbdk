@@ -46,7 +46,14 @@ void count()                     ;
 int process_pragma(char *);
 #undef yywrap
 
-int yywrap YY_PROTO((void))
+/* 
+  If compilation fails here please check the SDCClex.c for the YY_PROTO()
+  declaration, also check https://github.com/gheja/gbdk/issues/5
+
+  Original definition of this function was this: int yywrap YY_PROTO((void))
+*/
+
+int yywrap(void)
 {
    return(1);
 }
