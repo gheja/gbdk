@@ -191,7 +191,7 @@ char *argv[];
 	filep = startp;
 	while (1) {
 		ip = ib;
-		if (getline() == 0)
+		if (getline(NULL, NULL, NULL) == 0)
 			break;
 		if (pflag && sfp != stdin)
 			fprintf(stdout, "%s\n", ip);
@@ -222,7 +222,7 @@ char *argv[];
 		hp = NULL;
 		radix = 10;
 
-		while (getline()) {
+		while (getline(NULL, NULL, NULL)) {
 			ip = ib;
 
                         /* pass any "magic comments" to NoICE output */

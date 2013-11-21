@@ -288,7 +288,7 @@ char *argv[];
 		dot.s_area = &dca;
 		symp = &dot;
 		minit();
-		while (getline()) {
+		while (getline(NULL, NULL, NULL)) {
 			cp = cb;
 			cpt = cbt;
 			ep = eb;

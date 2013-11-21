@@ -399,7 +399,7 @@ getmap(d)
  */
 
 int
-getline()
+getline(char **__restrict __lineptr, size_t *__restrict __n, FILE *__restrict __stream)
 {
 loop:	if (incfil >= 0) {
 		if (fgets(ib, sizeof ib, ifp[incfil]) == NULL) {

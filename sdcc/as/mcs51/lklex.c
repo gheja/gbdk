@@ -471,7 +471,7 @@ getmap(d)
  */
 
 int
-getline()
+getline(char **__restrict __lineptr, size_t *__restrict __n, FILE *__restrict __stream)
 {
 	register int ftype;
 	register char *fid;
