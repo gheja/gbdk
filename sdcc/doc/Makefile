@@ -8,7 +8,7 @@ all: $(MANUAL).html $(MANUAL).pdf $(MANUAL).txt \
 
 install:
 	$(INSTALL) -d $(docdir)
-	cp -rf *.html *.txt *.pdf $(MANUAL).html $(TSS).html z80 avr $(docdir)
+	cp -rf *.html *.txt *.pdf z80 avr $(docdir)
 
 uninstall:
 	rm -rf $(docdir)
