@@ -1,6 +1,8 @@
 # Maccer rule
+MACCERDIR = ../../../maccer
+
 %.s: %.ms
-	maccer -o $@ $<
+	$(MACCERDIR)/maccer -o $@ $<
 
 ifeq ($(MODEL),small)
 NEAR_CALLS = 1
