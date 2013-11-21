@@ -1,0 +1,3 @@
+language: cpp
+install: apt-get -y install make gcc g++ bison flex
+script: make
