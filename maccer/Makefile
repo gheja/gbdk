@@ -14,7 +14,7 @@ OBJS	= maccer.o
 all: $(BIN)
 
 $(BIN): $(OBJS)
-	$(CC) $(LDFLAGS) -o $(BIN) $(OBJS)
+	$(CC) $(OBJS) $(LDFLAGS) -o $(BIN)
 ### I could not find the doc++, so removed the doc generation for now --gheja
 #	doc++ -d html $(BIN).c
 
