@@ -1,5 +1,5 @@
 # Top level Makefile for GBDK that combines the builds for sdcc,
-# gbdk-lib, and gbdk-support
+# gbdk-lib, gbdk-support and maccer
 #
 # 2001  Michael Hope <michaelh@juju.net.nz>
 # $Id: Makefile,v 1.4 2001/11/04 18:43:51 michaelh Exp $
@@ -25,12 +25,15 @@ TARGETSTRIP = $(TOOLSPREFIX)strip
 # Add extra flags here.  g++ 2.95.4 requires -fdollars-in-identifiers
 TARGETCXXFLAGS =
 
+# Directory containing the source to maccer
+MACCERDIR = $(TOPDIR)/maccer
 # Directory containing the source to sdcc
 SDCCDIR = $(TOPDIR)/sdcc
 # Directory containing the source to gbdk-lib
 GBDKLIBDIR = $(TOPDIR)/gbdk-lib
 # Directory containing the source to gbdk-support
 GBDKSUPPORTDIR = $(TOPDIR)/gbdk-support
+
 
 # Base setup
 # Extension to add to executables
@@ -92,7 +95,7 @@ src: clean
 	tar czf gbdk-$(VER).tar.gz gbdk
 
 # Base rules
-gbdk-build: sdcc-build gbdk-support-build gbdk-lib-build 
+gbdk-build: maccer-build sdcc-build gbdk-support-build gbdk-lib-build 
 
 gbdk-install: sdcc-install gbdk-support-install gbdk-lib-install
 
@@ -116,6 +119,13 @@ setup-from-cvs:
 	cvs -d :pserver:anonymous@cvs.sdcc.sourceforge.net:/cvsroot/sdcc -q co $(CVSFLAGS) sdcc
 	cvs -d :pserver:anonymous@cvs.gbdk.sourceforge.net:/cvsroot/gbdk -q co $(CVSFLAGS) gbdk-lib
 	cvs -d :pserver:anonymous@cvs.gbdk.sourceforge.net:/cvsroot/gbdk -q co $(CVSFLAGS) gbdk-support
+
+# Rules for maccer
+maccer-build:
+	$(MAKE) -C $(MACCERDIR)
+
+maccer-clean:
+	$(MAKE) -C $(MACCERDIR) clean
 
 # Rules for sdcc
 SDCCCONFIGUREFLAGS = \
