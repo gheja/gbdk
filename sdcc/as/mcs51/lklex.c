@@ -24,7 +24,7 @@
  *		VOID	getfid()
  *		VOID	getid()
  *		VOID	getSid()
- *		int	getline()
+ *		_IO_ssize_t	getline()
  *		int	getmap()
  *		char	getnb()
  *		int	more()
@@ -417,7 +417,7 @@ getmap(d)
 	return (c);
 }
 
-/*)Function	int	getline()
+/*)Function	_IO_ssize_t	getline()
  *
  *	The function getline() reads a line of input text from a
  *	.rel source text file, a .lnk command file or from stdin.
@@ -470,7 +470,7 @@ getmap(d)
  *		opened and closed sequentially scanning each in turn.
  */
 
-int
+_IO_ssize_t
 getline(char **__restrict __lineptr, size_t *__restrict __n, FILE *__restrict __stream)
 {
 	register int ftype;

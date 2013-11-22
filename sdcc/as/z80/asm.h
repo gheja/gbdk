@@ -521,7 +521,7 @@ extern	VOID		usage();
 extern	char		endline();
 extern	char		get();
 extern	VOID		getid();
-extern	int		getline(char **__restrict __lineptr, size_t *__restrict __n, FILE *__restrict __stream);
+extern	_IO_ssize_t	getline(char **__restrict __lineptr, size_t *__restrict __n, FILE *__restrict __stream);
 extern	int		getmap();
 extern	char		getnb();
 extern	VOID		getst();
