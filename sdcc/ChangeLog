@@ -1,3 +1,7 @@
+2015-03-28 Morris aka electronoob  <github@electronoob.com>
+
+	* sdcc/src/SDCC.y: fixed compile error, 'label at end of compound statement'.
+
 2001-11-04  Michael Hope  <michaelh@juju.net.nz>
 
 	* src/z80/peeph-gbz80.def: Removed a bad sub optimisation.
