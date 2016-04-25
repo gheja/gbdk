@@ -144,6 +144,7 @@ SDCCCONFIGUREFLAGS += \
 		--program-suffix=$(EXEEXTENSION)
 
 sdcc-build: $(SDCCDIR)/sdccconf.h
+	touch $(SDCCDIR)/src/SDCC.y
 	$(MAKE) -C $(SDCCDIR) SDCC_SUB_VERSION=$(PKG)-$(VER)
 
 $(SDCCDIR)/sdccconf.h:
