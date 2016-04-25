@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gheja/gbdk.svg?branch=master)](https://travis-ci.org/gheja/gbdk)
+
 GBDK
 ====
 
