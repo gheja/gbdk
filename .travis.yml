@@ -1,3 +1,9 @@
+matrix:
+  include:
+    - os: linux
+      dist: bionic
+    - os: linux
+      dist: xenial
 language: cpp
 install: sudo apt-get -y install make gcc g++ bison flex
 script:
