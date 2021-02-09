@@ -1,5 +1,10 @@
 [![Build Status](https://travis-ci.org/gheja/gbdk.svg?branch=master)](https://travis-ci.org/gheja/gbdk)
 
+Note: this is the latest official version 2.96a from April 2002. Now there
+is an actively developed community driven reboot called
+[gbdk-2020](https://github.com/Zal0/gbdk-2020/) with compiled versions
+ready to run on Windows, Linux and Mac OS.
+
 GBDK
 ====
 
