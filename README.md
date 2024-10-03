@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gheja/gbdk.svg?branch=master)](https://travis-ci.org/gheja/gbdk)
+[![Build Status](https://github.com/gheja/gbdk/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/gheja/gbdk/actions/workflows/c-cpp.yml)
 
 Note: this is the latest official version 2.96a from April 2002. Now there
 is an actively developed community driven reboot called
