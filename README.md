@@ -34,7 +34,7 @@ this is the latest version, it was released quite a while ago (back in
 April 2002).
 
 The code can be compiled in an up-to-date 64-bit Linux environment (at
-least it is up-to-date here in 2016).
+least it is up-to-date here in 2024).
 
 Original sites:
   * http://gbdk.sourceforge.net
@@ -43,8 +43,9 @@ Original sites:
 Building
 ========
 
-For the build I recommend an Ubuntu 16.04 LTS (you don't even need to
-install it, the Live system works just fine).
+For the build I recommend an Ubuntu 22.04 LTS (an earlier LTS version
+should also work, and you don't even need to install it, the Live system
+works just fine).
 
 The environment will need a few packages, all of them can be installed
 using apt-get:
