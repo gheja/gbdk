@@ -129,7 +129,7 @@
  *		VOID	diag()		assubr.c
  *		VOID	err()		assubr.c
  *		int	fprintf()	c-library
- *		_IO_ssize_t	getline()	aslex.c
+ *		__ssize_t	getline()	aslex.c
  *		VOID	list()		aslist.c
  *		VOID	lstsym()	aslist.c
  *		VOID	minit()		___mch.c

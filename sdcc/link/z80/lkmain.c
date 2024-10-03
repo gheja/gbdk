@@ -114,7 +114,7 @@
  *		FILE *	afile()		lkmain.c
  *		int	fclose()	c_library
  *		int	fprintf()	c_library
- *		_IO_ssize_t	getline()	lklex.c
+ *		__ssize_t	getline()	lklex.c
  *		VOID	library()	lklibr.c
  *		VOID	link()		lkmain.c
  *		VOID	lkexit()	lkmain.c

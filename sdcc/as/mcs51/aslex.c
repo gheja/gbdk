@@ -26,7 +26,7 @@
  *		char	endline()
  *		char	get()
  *		VOID	getid(id,c)
- *		_IO_ssize_t	getline()
+ *		__ssize_t	getline()
  *		int	getmap()
  *		char	getnb()
  *		VOID	getst()
@@ -352,7 +352,7 @@ getmap(d)
 	return (c);
 }
 
-/*)Function	_IO_ssize_t	getline()
+/*)Function	__ssize_t	getline()
  *
  *	The function getline() reads a line of assembler-source text
  *	from an assembly source text file or an include file.
@@ -398,7 +398,7 @@ getmap(d)
  *		will be updated.
  */
 
-_IO_ssize_t
+__ssize_t
 getline(char **__restrict __lineptr, size_t *__restrict __n, FILE *__restrict __stream)
 {
 loop:	if (incfil >= 0) {
