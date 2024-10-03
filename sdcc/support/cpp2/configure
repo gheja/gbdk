@@ -3417,14 +3417,14 @@ s%@out_object_file@%$out_object_file%g
 s%@symbolic_link@%$symbolic_link%g
 s%@thread_file@%$thread_file%g
 s%@c_target_objs@%$c_target_objs%g
-/@target_overrides@/r $target_overrides
+/@target_overrides@/r ${target_overrides:-/dev/null}
 s%@target_overrides@%%g
-/@host_overrides@/r $host_overrides
+/@host_overrides@/r ${host_overrides:-/dev/null}
 s%@host_overrides@%%g
 s%@cross_defines@%$cross_defines%g
-/@cross_overrides@/r $cross_overrides
+/@cross_overrides@/r ${cross_overrides:-/dev/null}
 s%@cross_overrides@%%g
-/@build_overrides@/r $build_overrides
+/@build_overrides@/r ${build_overrides:-/dev/null}
 s%@build_overrides@%%g
 
 CEOF
