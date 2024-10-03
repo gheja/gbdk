@@ -1,0 +1,24 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ "ubuntu-20.04", "ubuntu-22.04", "ubuntu-24.04" ]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: install dependencies
+      run: sudo apt-get -y install make gcc g++ bison flex
+    - name: make
+      run: make
+    - name: sudo make install
+      run: sudo make install
+    - name: make examples
+      run: cd gbdk-lib/examples/gb && make
