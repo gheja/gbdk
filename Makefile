@@ -4,7 +4,7 @@
 # 2001  Michael Hope <michaelh@juju.net.nz>
 # $Id: Makefile,v 1.4 2001/11/04 18:43:51 michaelh Exp $
 #
-TOPDIR = $(shell pwd)
+TOPDIR = "$(shell pwd)"
 
 # Package name, used for tarballs and cvs
 PKG = gbdk
